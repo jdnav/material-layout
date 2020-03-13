@@ -1,15 +1,15 @@
-<mat-sidenav-container>
+<mat-sidenav-container class="container-main-window">
 
     <!-- Left menu -->
-    <mat-sidenav>
-      <app-main-menu>
+    <mat-sidenav #mainMenu>
+      <app-main-menu (selectedOption)="onMainMenuSelectedOption($event.optionName, $event.optionUrl)">
       </app-main-menu>
     </mat-sidenav>
   
     <mat-sidenav-content>
   
       <!-- Common header -->
-      <app-main-header>
+      <app-main-header (clickMainMenu)="onMainMenuBurgerClicked()">
       </app-main-header>
   
       <!-- App's content -->

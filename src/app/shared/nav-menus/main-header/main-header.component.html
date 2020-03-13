@@ -8,7 +8,8 @@
     <!-- logo + title -->
     <div class="header-title-container" (click)="backToMainPage()" [@hoverTitle]="titleFocused ? 'selected' : 'unselected'"
       (mouseenter)="titleFocused = true" (mouseleave)="titleFocused = false">
-      <mat-icon svgIcon="platea" class="header-title-logo"></mat-icon>
+      <mat-icon mat-list-icon class="header-title-logo">account_circle</mat-icon>
+
       <span class="header-title-text">Title</span>
       <br>
       <div class="header-subtitle-text">Subtitle</div>

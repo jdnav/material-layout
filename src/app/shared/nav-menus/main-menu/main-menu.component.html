@@ -1,1 +1,74 @@
-<p>main-menu works!</p>
+<!-- Left-side menu -->
+<div class="mainmenu-container">
+
+    <!-- logo
+    <div class="mainmenu-header">
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+      <span class="header-title-text">LOGO</span>
+    </div>
+     -->
+
+    <!-- Category + items per category -->
+    <mat-list dense class="mainmenu-category" *ngFor="let category of this.mainMenuOptions">
+        <div class="mainmenu-category-header">{{ category.categoryLabel }}</div>
+
+        <mat-list-item (click)="onMenuClick(option.optionName, option.optionUrl)" class="mainmenu-category-option"
+            *ngFor="let option of category.categoryOptions">
+            <mat-icon mat-list-icon>{{ option.optionIcon }}</mat-icon>
+            <p mat-line class="mainmenu-category-option">{{ option.optionLabel }} </p>
+        </mat-list-item>
+    </mat-list>
+
+    <div class="mainmenu-remaining-space"></div>
+
+    <!-- User info 
+    <div *ngIf="user" class="mainmenu-footer">
+      <avatar class="mainmenu-avatar" [name]=user.fullName [size]="80" [displayType]="'circle'"></avatar>
+      <div class="mainmenu-avatar-details">
+        <div class="mainmenu-avatar-details-mainline">{{ user.fullName }}</div>
+        <div class="mainmenu-avatar-details-subline">{{ user.email }}</div>
+      </div>
+    </div>
+    -->
+
+    <!-- Menu's footer -->
+    <div class="mainmenu-footer-actions">
+        <!-- Change language -->
+        <!-- This part is commented so that the application only uses one language -->
+
+        <!-- languges switch commented 
+      <div> 
+        <button mat-icon-button color="white" [matMenuTriggerFor]="langMenu">
+          <mat-icon>language</mat-icon>
+        </button>
+        <mat-menu #langMenu="matMenu" [overlapTrigger]="false">
+  
+          <button mat-menu-item *ngFor="let lang of getLangs()" (click)="changeLocale(lang)">
+            <span class="flag-icon flag-icon-squared"
+              [ngClass]="'flag-icon-' + (lang === 'en' ? 'gb' : (lang === 'pt') ? 'br' : (lang === 'tr') ? 'tr' : lang)"
+              style="margin-right:5px"></span>
+            <span class="mat-body-2" color="primary">{{ 'LOCALE_NAMES.'+lang | uppercase | translate }}</span>
+          </button>
+  
+        </mat-menu>
+  
+        <span>{{ this.getCurrentLang() | uppercase }}</span>
+      </div>-->
+
+
+        <div class="mainmenu-footer-actions-remaining-space"></div>
+
+        <!-- Help button -->
+        <!--<button mat-icon-button color="white" (click)="onMenuClick('help', '/help')">
+        <mat-icon>help</mat-icon>
+      </button>-->
+
+        <!-- logout button -->
+        <button mat-icon-button color="white" (click)="onMenuClick('logout', null)">
+            <mat-icon>power_settings_new</mat-icon>
+        </button>
+
+    </div>
+
+
+</div>

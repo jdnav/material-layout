@@ -1,0 +1,126 @@
+.mainmenu-container {
+    height: 100%;
+    min-width: 275px;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  
+  .mainmenu-header {
+    flex: 0 0 40px;
+    width: auto;
+    order: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  .header-title-logo {
+    order: 0;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+  }
+  
+  .header-title-text {
+    order: 1;
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin-left: 10px;
+    font-weight: 200;
+  }
+  
+  .mainmenu-category {
+    flex: 0 1 auto;
+    order: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .mainmenu-category-header {
+    order: 0;
+    width: 250px;
+    font-size: 25px;
+    opacity: 0.6;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .mainmenu-category-option {
+    font-size: 16px !important;
+  }
+  
+  .mat-list-item {
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .mat-list-item:hover {
+    cursor: pointer;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  
+  
+  .mainmenu-remaining-space {
+    flex: 1 1 auto;
+    order: 2;
+  }
+  
+  .mainmenu-footer {
+    flex: 0 1 60px;
+    order: 3;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mainmenu-avatar {
+    position: relative;
+    top: -30px;
+    margin-left: 10px;
+    border-radius: 50% !important;
+    order: 0;
+    flex: 0 0 auto;
+  }
+  
+  .mainmenu-avatar-details {
+    order: 1;
+    flex: 0 0 auto;
+    margin: 0 20px 0 20px;
+  }
+  
+  .mainmenu-avatar-details-mainline {
+    font-weight: 200;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .mainmenu-avatar-details-subline {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .mainmenu-footer-actions {
+    flex: 0 1 40px;
+    order: 4;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mainmenu-footer-actions-remaining-space {
+    flex: 1 1 auto;
+  }
+  
+  
+  
