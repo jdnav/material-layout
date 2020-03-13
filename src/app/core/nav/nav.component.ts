@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, ViewChild, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material';
+import { NAV_MAIN_MENU_CATALOG } from '../main-menu-catalog';
 
 @Component({
   selector: 'app-nav',
@@ -12,6 +13,8 @@ export class NavComponent {
   @Output() openMenu: EventEmitter<void> = new EventEmitter();
 
   @ViewChild('mainMenu', { static: false }) mainMenu: MatSidenav;
+
+  mainMenuConfig = NAV_MAIN_MENU_CATALOG;
 
   constructor(private router: Router, ) { }
 
