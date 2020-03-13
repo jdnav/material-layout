@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavModule } from './nav/nav.module';
+import { NavMenusModule } from './nav-menus/nav-menus.module';
 
 
 
@@ -8,7 +8,7 @@ import { NavModule } from './nav/nav.module';
   declarations: [],
   imports: [
     CommonModule,
-    NavModule
+    NavMenusModule
   ]
 })
-export class CoreModule { }
+export class SharedModule { }
