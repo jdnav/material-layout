@@ -1,1 +1,36 @@
-<p>main-header works!</p>
+<mat-toolbar color="primary" class="header-container">
+
+    <!-- Burger menu -->
+    <div class="header-burger" (click)="openMenu()">
+      <mat-icon>dehaze</mat-icon>
+    </div>
+  
+    <!-- logo + title -->
+    <div class="header-title-container" (click)="backToMainPage()" [@hoverTitle]="titleFocused ? 'selected' : 'unselected'"
+      (mouseenter)="titleFocused = true" (mouseleave)="titleFocused = false">
+      <mat-icon svgIcon="platea" class="header-title-logo"></mat-icon>
+      <span class="header-title-text">Title</span>
+      <br>
+      <div class="header-subtitle-text">Subtitle</div>
+    </div>
+  
+    <!-- Space between "logo" and "search box" -->
+    <span class="header-remaining-space"></span>
+  
+    <!-- Search box 
+    <div class="header-rightmenu">
+      <mat-form-field floatLabel="never" style="margin-right:5px">
+        <input type="text" matInput (keyup.enter)="this.onSubmit(value)" [placeholder]="'NAV.MAIN_HEADER.SEARCH' | translate"
+          [(ngModel)]="value">
+  
+        <button mat-button *ngIf="value && value.length > 0" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+        <button mat-icon-button *ngIf="!value || value.length === 0" matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    -->
+  
+  </mat-toolbar>

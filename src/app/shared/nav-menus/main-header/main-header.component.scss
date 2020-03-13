@@ -1,0 +1,96 @@
+.header-burger{
+  margin-left: 0.5%;
+  cursor: pointer;
+}
+
+.header-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  overflow: hidden;
+  line-height: 0.9;
+}
+
+.header-title-logo {
+  order: 0;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+.header-title-container {
+  order: 1;
+  text-align: center;
+  margin-left: 42%;
+  cursor: pointer;
+}
+
+.header-title-text {
+  order: 1;
+  font-size: 34px;
+  letter-spacing: 6px;
+  margin-left: 10px;
+}
+
+.header-subtitle-text {
+  font-size: 15px;
+  float:right;
+  font-weight: 300;
+}
+
+.header-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+  order: 2;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 150px;
+  order: 3 !important;
+  align-self: flex-end;
+}
+
+.header-rightmenu {
+  order: 3 !important;
+  align-self: center;
+}
+
+.header-rightmenu-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-form-field-underline {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-form-field-invalid .mat-form-field-underline .mat-form-field-ripple {
+  background-color: rgb(255, 96, 96) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-form-field-underline .mat-form-field-ripple {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-error {
+  color: rgb(255, 96, 96) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-form-field-invalid .mat-input-element {
+  caret-color: rgb(255, 96, 96) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-input-element {
+  caret-color: rgb(255, 255, 255) !important;
+}
+
+::ng-deep .header-rightmenu-card-header .mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+

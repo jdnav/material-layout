@@ -2,3 +2,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// default container for the app
+.container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
